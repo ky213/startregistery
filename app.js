@@ -44,7 +44,7 @@ class ApplicationServer {
 	initControllers() {
         require("./BlockchainController.js")(this.app, this.blockchain);
 	}
-
+	
 	start() {
 		let self = this;
 		this.app.listen(this.app.get("port"), () => {
